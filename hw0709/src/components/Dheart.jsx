@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { FaHeart, FaShareAlt } from "react-icons/fa";
 
 const Rail = styled.div`
+  position: sticky;
+  top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;

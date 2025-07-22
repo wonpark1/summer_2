@@ -97,7 +97,7 @@ function Dnext({ currentId }) {
       <Card>
         <Circle
           as={prevPost ? Link : "div"}
-          to={prevPost ? `/boards/${prevPost.id}` : undefined}
+          to={prevPost ? `/post/${prevPost.id}` : undefined}
         >
           <FiArrowLeft size={24} />
         </Circle>
@@ -112,7 +112,7 @@ function Dnext({ currentId }) {
       <Card $reverse>
         <Circle
           as={nextPost ? Link : "div"}
-          to={nextPost ? `/boards/${nextPost.id}` : undefined}
+          to={nextPost ? `/post/${nextPost.id}` : undefined}
         >
           <FiArrowRight size={24} />
         </Circle>
