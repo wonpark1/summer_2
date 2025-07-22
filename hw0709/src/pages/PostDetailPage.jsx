@@ -9,6 +9,7 @@ import Dmenu from "../components/Dmenu";
 import Dheart from "../components/Dheart";
 import Dnext from "../components/Dnext";
 import Dword from "../components/Dword";
+import Dprofile from "../components/Dprofile";
 
 const Page = styled.div`
   display: grid;
@@ -88,6 +89,10 @@ function PostDetailPage() {
         )}
 
         <Content>{post.content}</Content>
+        <Dprofile
+          nickname={post.writerName}
+          avatarUrl={post.writerProfileUrl}
+        />
         <Dnext currentId={post.id} />
       </Main>
     </Page>
